@@ -26,7 +26,9 @@ void setup() {
 /* Set the baud rate for the software serial port */
 //BluetoothSerial.begin(57600); // Initialise BlueTooth
 BluetoothSerial.begin(9600); // Initialise BlueTooth
+BluetoothSerial.setTimeout(5000); // timeout for BlueTooth connexion
 Serial.begin(9600);
+Serial.setTimeout(5000); // timeout for Serial connexion
 delay(1000);
 dht.begin(); // Initialize DHT Teperature Sensor
 BluetoothSerial.print("Starting ...");
