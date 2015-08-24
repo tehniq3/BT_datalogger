@@ -38,7 +38,7 @@ void loop() {
 int8_t h = dht.readHumidity(); // Read humidity
 int16_t t = dht.readTemperature(TEMPTYPE); // read temperature
 
-delay(1000);
+delay(2000);
 //h = 34;
 //t = 32;
 
@@ -56,4 +56,5 @@ Serial.print(h);
 BluetoothSerial.print("\n");
 Serial.print("\n");
 }
+delay(2000);
 }
